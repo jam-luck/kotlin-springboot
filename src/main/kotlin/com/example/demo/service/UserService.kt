@@ -7,4 +7,6 @@ import org.springframework.stereotype.Service
 @Service
 class UserService(private val userRepository: UserRepository){
     fun getAllUsers(): List<AppUser> = userRepository.findAll().toList()
+
+    fun getUserById(id : Long): AppUser = userRepository.findById(id).orElse(null)
 }
