@@ -1,6 +1,6 @@
 package com.example.demo.repository
 
-import com.example.demo.domain.User
+import com.example.demo.domain.AppUser
 import org.springframework.data.repository.CrudRepository
 
-interface UserRepository : CrudRepository<User,Long>
+interface UserRepository : CrudRepository<AppUser,Long>
